@@ -1,15 +1,12 @@
 import './assets/global.css';
-import Button from 'react-bootstrap/Button';
+import Home from './pages/home/home';
 
 
 function App() {
 
   return (
     <>
-      <div>
-      <Button variant="primary">welcome to React bootstrap with ReduxToolKit</Button>{' '}
-      </div>
-
+      <Home />
     </>
   )
 }
