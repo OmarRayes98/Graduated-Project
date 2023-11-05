@@ -36,6 +36,10 @@ nav .gap-40 {
     color: white !important;
 }
 
+.black .navbar-nav {
+    align-items: flex-start;
+}
+
 @media screen and (max-width:1300px) {
     nav .gap-40 {
         gap: 20px;

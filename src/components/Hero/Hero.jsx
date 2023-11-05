@@ -13,7 +13,7 @@ const Hero = () => {
                     alt="First slide"
                 />
                 <div className='position-absolute top-50 start-50 translate-middle text-center '>
-                    <h1>وزارة الاقتصاد والتتجارة الاقتصادية</h1>
+                    <h1>وزارة الاقتصاد والتجارة الاقتصادية</h1>
                     <p>ندعم رحلتك الاستثمارية</p>
                     <input type="text" placeholder='ابحث' className='border-0' />
                 </div>

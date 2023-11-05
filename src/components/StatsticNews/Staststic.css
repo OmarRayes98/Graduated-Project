@@ -1,0 +1,19 @@
+.home .staststic {
+    width: max-content;
+    margin: 144px auto;
+}
+
+.home .staststic p {
+    color: #CE1127;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width:1030px) {
+    .home .staststic img {
+        width: calc(100vw - 60px);
+        display: block;
+        margin: 0 30px;
+    }
+}

@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from './../../../assets/img/logo.svg'
 import dark from './../../../assets/img/light.svg'
+import light from './../../../assets/img/dark.svg'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useState } from 'react';
 const NavBar = () => {
@@ -15,7 +16,7 @@ const NavBar = () => {
                 <Navbar.Brand href="#home"><img src={logo} alt="" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => { setactive(!active); }} />
                 <Navbar.Collapse id="basic-navbar-nav" className=''>
-                    <Nav className="me-auto gap-40 align-items-start">
+                    <Nav className="me-auto gap-40 ">
                         <Nav.Link href="#" className='active p-0'>الرئيسية</Nav.Link>
                         <Nav.Link href="#" className='p-0'>النشرة الاقتصادية</Nav.Link>
                         <Nav.Link href="#" className='p-0'>آخر الأخبار</Nav.Link>
@@ -32,7 +33,7 @@ const NavBar = () => {
                                 <Dropdown.Item href="#">En</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
-                        <img src={dark} alt="" />
+                        <img src={(active) ? light : dark} alt="" />
                     </Nav>
                 </Navbar.Collapse>
             </Container>
