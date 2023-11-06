@@ -1,0 +1,57 @@
+nav {
+    background: linear-gradient(180deg, #FAFAFA 0%, rgba(250, 250, 250, 0.25) 71.81%) !important;
+    padding: 14px 63px !important;
+}
+
+.dropdown-toggle::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0 !important;
+}
+
+nav .nav-link {
+    width: max-content;
+    color: #222325;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+nav .active {
+    font-weight: 500;
+}
+
+nav .gap-40 {
+    gap: 40px;
+}
+
+.black {
+    background: rgba(34, 35, 37, 0.91) !important;
+    height: 100vh;
+}
+
+.black .nav-link,
+.black .text-black {
+    color: white !important;
+}
+
+.black .navbar-nav {
+    align-items: flex-start;
+}
+
+@media screen and (max-width:1300px) {
+    nav .gap-40 {
+        gap: 20px;
+    }
+
+    nav {
+        padding: 40px !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    nav .nav-link {
+        margin-top: 40px;
+    }
+}

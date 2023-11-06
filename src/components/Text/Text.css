@@ -1,0 +1,19 @@
+.home .workspace {
+    padding: 141px 0;
+    max-width: 974px;
+    margin: 0 auto;
+    color: #222325;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width:992px) {
+    .home .workspace {
+        margin: 0 32px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+}

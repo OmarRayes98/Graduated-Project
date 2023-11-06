@@ -1,0 +1,35 @@
+.home .Prese {
+    background: rgba(34, 35, 37, 0.60);
+}
+
+.home .Prese img {
+    width: 432px;
+}
+
+.home .Prese p {
+    color: #FAFAFA;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 616px;
+    margin-left: 4.53vw;
+}
+
+.home .Prese span {
+    color: #FAFAFA;
+    font-size: 36px;
+    font-weight: 500;
+    max-width: 616px;
+}
+
+@media screen and (max-width:440px) {
+    .home .Prese img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .home .Prese {
+        justify-content: center !important;
+        gap: 74px;
+    }
+}
