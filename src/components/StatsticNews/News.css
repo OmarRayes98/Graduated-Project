@@ -49,6 +49,7 @@
     font-size: 36px;
     font-weight: 500;
     max-width: 518px;
+
 }
 
 .home .m-slider button {
@@ -59,6 +60,11 @@
     color: #222325;
     font-size: 20px;
     font-weight: 400;
+}
+
+.home .m-slider button hr {
+    margin: 0 auto;
+    width: 65%;
 }
 
 .home .more {

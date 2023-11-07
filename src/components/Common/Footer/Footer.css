@@ -1,0 +1,54 @@
+.footer-bg {
+    padding: 36px 58px;
+    background-color: #222325;
+}
+
+footer p {
+    color: #FAFAFA;
+    max-width: max-content;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+footer img {
+    margin-bottom: 27px;
+}
+
+footer .gap-106 {
+    row-gap: 106px;
+}
+
+footer .copy {
+    margin-top: 124px;
+}
+
+@media screen and (max-width:992px) {
+    footer p {
+        font-size: 16px;
+    }
+
+    .footer-bg {
+        padding: 36px 16px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    footer .text {
+        max-width: 260px;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    footer .social {
+        width: 100vw;
+        justify-content: center;
+        border-bottom: 1px solid #FAFAFA;
+        padding-bottom: 17px;
+        margin-bottom: 33px;
+    }
+
+    .footer-bg {
+        padding: 36px 16px;
+    }
+}
