@@ -3,11 +3,11 @@ import Staststic from './Staststic';
 import News from './News';
 import './Parent.css'
 
-const Parent = () => {
+const Parent = ({ darkLight }) => {
     return (
         <div>
-            <Staststic />
-            <News />
+            <Staststic darkLight={darkLight} />
+            <News darkLight={darkLight} />
         </div>
     );
 }

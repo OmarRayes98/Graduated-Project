@@ -3,6 +3,10 @@
     background-color: #222325;
 }
 
+.home.dark .footer-bg {
+    background-color: rgba(78, 78, 78, 0.75);
+}
+
 footer p {
     color: #FAFAFA;
     max-width: max-content;

@@ -2,6 +2,10 @@
     background: rgba(34, 35, 37, 0.60);
 }
 
+.home.dark .Prese {
+    background: #555;
+}
+
 .home .Prese img {
     width: 432px;
 }

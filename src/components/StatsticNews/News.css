@@ -28,6 +28,11 @@
     right: -129px;
 }
 
+.home .m-slider .darkColor .carousel-control-next-icon,
+.home .m-slider .darkColor .carousel-control-prev-icon {
+    filter: invert(0) grayscale(100);
+}
+
 .home .m-slider img {
     width: 474px;
     height: 390px;
@@ -52,6 +57,11 @@
 
 }
 
+.home .m-slider .darkColor p,
+.home .m-slider .darkColor h2 {
+    color: #222325;
+}
+
 .home .m-slider button {
     width: 138px;
     height: 80px;
@@ -60,6 +70,11 @@
     color: #222325;
     font-size: 20px;
     font-weight: 400;
+}
+
+.home .m-slider .darkColor button {
+    background: #434344;
+    color: #FAFAFA;
 }
 
 .home .m-slider button hr {
@@ -73,6 +88,10 @@
     color: #222325;
     font-size: 20px;
     font-weight: 500;
+}
+
+.home .more.darkColor {
+    color: #FAFAFA;
 }
 
 @media screen and (max-width:1300px) {

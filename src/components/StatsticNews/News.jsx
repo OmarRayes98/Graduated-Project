@@ -4,12 +4,12 @@ import Carousel from 'react-bootstrap/Carousel';
 import imge from './../../assets/img/LastNews.png'
 import imge2 from './../../assets/img/LastNews2.png'
 import imge3 from './../../assets/img/LastNews3.png'
-const News = () => {
+const News = ({ darkLight }) => {
     return (
         <div>
             <p className='title'>أخر الاخبار</p>
             <div className="m-slider m-auto ">
-                <Carousel data-bs-theme="dark" style={{ backgroundColor: "#222325", borderRadius: "16px" }}>
+                <Carousel data-bs-theme="dark" style={{ backgroundColor: (darkLight) ? "#222325" : "#FAFAFA", borderRadius: "16px" }} className={(darkLight) ? "" : "darkColor"}>
                     <Carousel.Item>
                         <div className=' d-flex w-100 flex-wrap justify-content-center  '>
                             <div className="info">
@@ -43,7 +43,7 @@ const News = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <p className='more'>شاهد المزيد</p>
+            <p className={(darkLight) ? "more" : "more darkColor"}>شاهد المزيد</p>
         </div >
     );
 }
