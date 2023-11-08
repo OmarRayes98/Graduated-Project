@@ -2,7 +2,6 @@ import './NavBar.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from './../../../assets/img/logo.svg'
 import ligthLogo from './../../../assets/img/ligthLogo.png'
 import darkIcon from './../../../assets/img/light.svg'
@@ -13,6 +12,7 @@ const NavBar = ({ darkMode, darkLight }) => {
     const [active, setactive] = useState("");
     const [dark, setdark] = useState("");
     const [lang, setlang] = useState("Ar");
+
     useEffect(() => {
         if (darkLight) {
             setdark("")
@@ -20,6 +20,8 @@ const NavBar = ({ darkMode, darkLight }) => {
             setdark("dark")
         }
     }, [darkLight]);
+
+
     function activeHundel() {
         if (active == "black") {
             setactive("")
@@ -51,7 +53,7 @@ const NavBar = ({ darkMode, darkLight }) => {
 
                             </Dropdown.Menu>
                         </Dropdown>
-                        <img src={(active || !darkLight) ? light : darkIcon} alt="" onClick={() => darkMode(prev => !prev)} className='dark' />
+                        <img src={(active || !darkLight) ? light : darkIcon} alt="" onClick={() => darkMode(prev => !prev)}  />
 
                     </Nav>
                 </Navbar.Collapse>

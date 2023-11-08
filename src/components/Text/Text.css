@@ -2,16 +2,14 @@
     padding: 141px 0;
     max-width: 974px;
     margin: 0 auto;
-    color: #222325;
+    color: var(--accent-color);
     text-align: center;
     font-size: 28px;
     font-weight: 500;
 
 }
 
-.home.dark .workspace {
-    color: #fafafa;
-}
+
 
 @media screen and (max-width:992px) {
     .home .workspace {

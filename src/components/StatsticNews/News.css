@@ -5,7 +5,7 @@
 .home .title {
     width: max-content;
     margin: 0 auto;
-    color: #CE1127;
+    color: var(--seconday-color);
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 48px;
@@ -44,38 +44,38 @@
 }
 
 .home .m-slider h2 {
-    color: #FAFAFA;
+    color: var(--primary-color);
     font-size: 28px;
     font-weight: 300;
 }
 
 .home .m-slider p {
-    color: #FAFAFA;
+    color: var(--primary-color);
     font-size: 36px;
     font-weight: 500;
     max-width: 518px;
 
 }
 
-.home .m-slider .darkColor p,
+/* .home .m-slider .darkColor p,
 .home .m-slider .darkColor h2 {
     color: #222325;
-}
+} */
 
 .home .m-slider button {
     width: 138px;
     height: 80px;
     border-radius: 8px;
-    background: #FAFAFA;
-    color: #222325;
+    background: var(--primary-color);
+    color: var(--accent-color);
     font-size: 20px;
     font-weight: 400;
 }
 
-.home .m-slider .darkColor button {
+/* .home .m-slider .darkColor button {
     background: #434344;
     color: #FAFAFA;
-}
+} */
 
 .home .m-slider button hr {
     margin: 0 auto;
@@ -85,14 +85,11 @@
 .home .more {
     width: max-content;
     margin: 82px auto;
-    color: #222325;
+    color: var(--accent-color);
     font-size: 20px;
     font-weight: 500;
 }
 
-.home .more.darkColor {
-    color: #FAFAFA;
-}
 
 @media screen and (max-width:1300px) {
 

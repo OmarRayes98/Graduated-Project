@@ -27,7 +27,7 @@ nav.dark .dropdown-item {
 
 nav .nav-link {
     width: max-content;
-    color: #222325;
+    color: var(--accent-color);
     font-size: 20px;
     font-weight: 300;
 }
@@ -45,7 +45,7 @@ nav .gap-40 {
     height: 100vh;
 }
 
-.black .nav-link,
+
 .black .text-black {
     color: white !important;
 }

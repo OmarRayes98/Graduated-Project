@@ -1,0 +1,17 @@
+:root{
+
+    --primary-color: #fafafa;
+    --seconday-color : #ce1127;
+    --accent-color :#222325;
+    --overlay-bg :transparent;
+    --link-color:#fafafa;
+}
+
+.dark{
+    --primary-color: #222325;
+    /* --seconday-color : #ce1127; */
+    --accent-color :#fafafa;
+    background-image: url('./img/Dark-bg.png');
+    --overlay-bg : rgba(0, 0, 0, 0.2); /* Adjust the color and opacity as needed */
+
+}

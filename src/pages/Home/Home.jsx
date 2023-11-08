@@ -9,6 +9,7 @@ import './Home.css'
 
 const Home = () => {
     const [darkLight, setdarkLight] = useState(false);
+    
     return (
         <div className={(darkLight) ? "home" : "home dark"}>
             <NavBar darkMode={setdarkLight} darkLight={darkLight} />

@@ -1,4 +1,3 @@
-import React from 'react';
 import './News.css'
 import Carousel from 'react-bootstrap/Carousel';
 import imge from './../../assets/img/LastNews.png'

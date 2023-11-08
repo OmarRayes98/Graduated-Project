@@ -41,6 +41,16 @@
     background-color: #CE1127 !important;
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-bg ); /* Adjust the color and opacity as needed */
+  z-index: 1; /* Place the overlay above the image and content */
+}
+
 @media screen and (max-width:992px) {
     .home .carousel h1 {
         font-size: 28px;
