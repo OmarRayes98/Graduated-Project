@@ -3,6 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from './../../../assets/img/logo.svg'
+import close from './../../../assets/img/Close.svg'
+import menu from './../../../assets/img/Menu.svg'
+
 import ligthLogo from './../../../assets/img/ligthLogo.png'
 import darkIcon from './../../../assets/img/light.svg'
 import light from './../../../assets/img/dark.svg'
@@ -33,8 +36,16 @@ const NavBar = ({ darkMode, darkLight }) => {
         <Navbar expand="lg" className={active + " fixed-top " + dark}>
             <Container className='m-0 p-0 mw-100'>
                 <Navbar.Brand href="#home"><img src={(darkLight) ? logo : ligthLogo} alt="" /></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => { activeHundel() }} />
-                <Navbar.Collapse id="basic-navbar-nav" className=''>
+                <Navbar.Toggle className='nav-toggle' aria-controls="basic-navbar-nav" onClick={() => { activeHundel() }} >
+                {
+                active=="black" ? (
+            <img src={close} className='close-rotate' alt="Close Menu" />
+          ) : (
+            <img src={menu} alt="Open Menu"  />
+          )}
+          </Navbar.Toggle>
+                
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto gap-40 ">
                         <Nav.Link href="#" className='active p-0'>الرئيسية</Nav.Link>
                         <Nav.Link href="#" className='p-0'>النشرة الاقتصادية</Nav.Link>

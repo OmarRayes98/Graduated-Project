@@ -29,6 +29,7 @@
     font-size: 64px;
     font-weight: 600;
     width: max-content;
+    
 }
 
 .home .carousel p {
@@ -49,6 +50,10 @@
   height: 100%;
   background: var(--overlay-bg ); /* Adjust the color and opacity as needed */
   z-index: 1; /* Place the overlay above the image and content */
+}
+
+.text-z{
+    z-index: 22;
 }
 
 @media screen and (max-width:992px) {

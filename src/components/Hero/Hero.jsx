@@ -11,7 +11,7 @@ const Hero = () => {
                     src={Background}
                     alt="First slide"
                 />
-                <div className='position-absolute top-50 start-50 z-index-2 translate-middle text-center '>
+                <div className='position-absolute top-50 start-50  translate-middle text-center text-z'>
                     <h1>وزارة الاقتصاد والتجارة الاقتصادية</h1>
                     <p>ندعم رحلتك الاستثمارية</p>
                     <input type="text" placeholder='ابحث' className='border-0' />
@@ -26,7 +26,7 @@ const Hero = () => {
                     src={Background}
                     alt="Second slide"
                 />
-                <div className='position-absolute top-50 start-50 z-index-2 translate-middle text-center '>
+                <div className='position-absolute top-50 start-50  translate-middle text-center text-z'>
                     <h1>وزارة الاقتصاد والتجارة الاقتصادية</h1>
                     <p>ندعم رحلتك الاستثمارية</p>
                     <input type="text" placeholder='ابحث' className='border-0' />
@@ -40,7 +40,7 @@ const Hero = () => {
                     src={Background}
                     alt="Third slide"
                 />
-                <div className='position-absolute top-50 start-50 z-index-2 translate-middle text-center '>
+                <div className='position-absolute top-50 start-50  translate-middle text-center text-z'>
                     <h1>وزارة الاقتصاد والتجارة الاقتصادية</h1>
                     <p>ندعم رحلتك الاستثمارية</p>
                     <input type="text" placeholder='ابحث' className='border-0' />
