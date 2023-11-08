@@ -1,11 +1,12 @@
 import React from 'react';
 import './Staststic.css'
 import light from './../../assets/img/Staststic-light.png'
-const Staststic = () => {
+import dark from './../../assets/img/Staststic-dark.png'
+const Staststic = ({ darkLight }) => {
     return (
         <div className='staststic text-center '>
             <p>أهم الإحصائيات</p>
-            <img src={light} alt="" />
+            <img src={(darkLight) ? light : dark} alt="" />
         </div>
     );
 }

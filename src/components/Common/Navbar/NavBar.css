@@ -3,6 +3,20 @@ nav {
     padding: 14px 63px !important;
 }
 
+nav.dark {
+    background: rgba(34, 35, 37, 0.85) !important;
+}
+
+nav.dark a,
+nav.dark a.active,
+nav.dark button {
+    color: #fff !important;
+}
+
+nav.dark .dropdown-item {
+    color: black !important;
+}
+
 .dropdown-toggle::after {
     position: absolute;
     bottom: 0;
@@ -38,6 +52,10 @@ nav .gap-40 {
 
 .black .navbar-nav {
     align-items: flex-start;
+}
+
+.dark {
+    cursor: pointer;
 }
 
 @media screen and (max-width:1300px) {

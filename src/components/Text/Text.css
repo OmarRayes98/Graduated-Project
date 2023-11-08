@@ -9,6 +9,10 @@
 
 }
 
+.home.dark .workspace {
+    color: #fafafa;
+}
+
 @media screen and (max-width:992px) {
     .home .workspace {
         margin: 0 32px;
