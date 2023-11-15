@@ -15,3 +15,7 @@
     --overlay-bg : rgba(0, 0, 0, 0.2); /* Adjust the color and opacity as needed */
 
 }
+
+.rtl{
+    direction: rtl;
+}

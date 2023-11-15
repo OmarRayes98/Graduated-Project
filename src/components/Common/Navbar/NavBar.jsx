@@ -11,7 +11,12 @@ import darkIcon from './../../../assets/img/light.svg'
 import light from './../../../assets/img/dark.svg'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useEffect, useState } from 'react';
+
+import { useTranslation } from 'react-i18next';
+
+
 const NavBar = ({ darkMode, darkLight }) => {
+    const { t , i18n } = useTranslation();
     const [active, setactive] = useState("");
     const [dark, setdark] = useState("");
     const [lang, setlang] = useState("Ar");
@@ -32,11 +37,20 @@ const NavBar = ({ darkMode, darkLight }) => {
             setactive("black")
         }
     }
+
+    const changeLanguage = (lang) =>{
+
+        i18n.changeLanguage(lang);
+        
+        setlang(lang);
+
+    }
+
     return (
-        <Navbar expand="lg" className={active + " fixed-top " + dark}>
+        <Navbar  expand="lg" className={active + " fixed-top " + dark}>
             <Container className='m-0 p-0 mw-100'>
                 <Navbar.Brand href="#home"><img src={(darkLight) ? logo : ligthLogo} alt="" /></Navbar.Brand>
-                <Navbar.Toggle className='nav-toggle' aria-controls="basic-navbar-nav" onClick={() => { activeHundel() }} >
+                <Navbar.Toggle  className='nav-toggle' aria-controls="basic-navbar-nav" onClick={() => { activeHundel() }} >
                 {
                 active=="black" ? (
             <img src={close} className='close-rotate' alt="Close Menu" />
@@ -45,22 +59,19 @@ const NavBar = ({ darkMode, darkLight }) => {
           )}
           </Navbar.Toggle>
                 
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse style={{flexGrow: i18n.language=='en' ? '0':'1'}} id="basic-navbar-nav">
                     <Nav className="me-auto gap-40 ">
-                        <Nav.Link href="#" className='active p-0'>الرئيسية</Nav.Link>
-                        <Nav.Link href="#" className='p-0'>النشرة الاقتصادية</Nav.Link>
-                        <Nav.Link href="#" className='p-0'>آخر الأخبار</Nav.Link>
-                        <Nav.Link href="#" className='p-0'>القوانين</Nav.Link>
-                        <Nav.Link href="#" className='p-0'>الشكاوي الالكترونية</Nav.Link>
-                        <Nav.Link href="#" className='p-0'>اتصل بنا</Nav.Link>
+                        <Nav.Link href="#" className='active p-0'>{t('label.home')}</Nav.Link>
+                        <Nav.Link href="#" className='p-0'>{t('label.news')}</Nav.Link>
+                        <Nav.Link href="#" className='p-0'>{t('label.contact')}</Nav.Link>
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" className='position-relative bg-transparent text-black border-0'>
                                 {lang}
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#" onClick={() => setlang("Ar")}>Ar</Dropdown.Item>
-                                <Dropdown.Item href="#" onClick={() => setlang("En")}>En</Dropdown.Item>
+                                <Dropdown.Item href="#" onClick={() => changeLanguage('ar')}>Ar</Dropdown.Item>
+                                <Dropdown.Item href="#" onClick={() => changeLanguage('en')}>En</Dropdown.Item>
 
                             </Dropdown.Menu>
                         </Dropdown>
