@@ -1,3 +1,4 @@
+import React from 'react';
 import './Staststic.css'
 import light from './../../assets/img/Staststic-light.png'
 import dark from './../../assets/img/Staststic-dark.png'

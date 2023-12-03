@@ -44,7 +44,7 @@ const Hero = () => {
                         
                     carusalText[i18n.language] && carusalText[i18n.language][0]['description'+i18n.language]
                     }</p>
-                    <input type="text" placeholder='ابحث' className='border-0' />
+                    <input type="text" placeholder=' ' className='border-0' />
                 </div>
                 <div className="overlay"></div>
 
@@ -59,7 +59,7 @@ const Hero = () => {
                 <div className='position-absolute top-50 start-50  translate-middle text-center text-z'>
                     <h1>{t('title.titleCarsoual')}</h1>
                     <p>{ carusalText[i18n.language] && carusalText[i18n.language][1]['description'+i18n.language]}</p>
-                    <input type="text" placeholder='ابحث' className='border-0' />
+                    <input type="text" placeholder=' ' className='border-0' />
                 </div>
                 <div className="overlay"></div>
 
@@ -73,7 +73,7 @@ const Hero = () => {
                 <div className='position-absolute top-50 start-50  translate-middle text-center text-z'>
                     <h1>{t('title.titleCarsoual')}</h1>
                     <p>{ carusalText[i18n.language] && carusalText[i18n.language][2]['description'+i18n.language]}</p>
-                    <input type="text" placeholder='ابحث' className='border-0' />
+                    <input type="text" placeholder=' ' className='border-0' />
                 </div>
                 <div className="overlay"></div>
 
